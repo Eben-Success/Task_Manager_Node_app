@@ -1,8 +1,5 @@
 const mongoose = require('mongoose')
 require('dotenv').config();
-// const connectDB = async () => {
-//
-// }
 
 mongoose.set('strictQuery', true);
 async function connectDB(){
@@ -18,10 +15,3 @@ async function connectDB(){
 
 
 module.exports = connectDB
-
-// return mongoose.connect(url, {
-//     useNewUrlParser: true,
-//     useCreateIndex: true,
-//     useFindAndModify: false,
-//     useUnifiedTopology: true,
-// })
